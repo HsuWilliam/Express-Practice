@@ -1,11 +1,11 @@
 const express = require('express');
+const session = express.session;
 const app = express();
 const port = 3000;
 const firebase = require('firebase');
 const bodyParser = require('body-parser'); // Middleware 
 var path = require('path');
 AuthTag = false;
-const test = "";
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.engine("html", require("ejs").renderFile);
